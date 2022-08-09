@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "aad7d663-7b37-4223-94d7-db496792a07a",
+		"name": "API SORA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generate OAuthToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "EurusClient",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "EurusClient",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "profile",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cloudsso.cisco.com/as/token.oauth2",
+					"protocol": "https",
+					"host": [
+						"cloudsso",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"as",
+						"token.oauth2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Projects In Sora",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mimir-prod.cisco.com/api/mimir/sora/all_projects_with_engineer_details?limit=1",
+					"protocol": "https",
+					"host": [
+						"mimir-prod",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"api",
+						"mimir",
+						"sora",
+						"all_projects_with_engineer_details"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account Specific Bug Comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mimir-prod.cisco.com/api/mimir/sora/account_specific_comments_project?projectId=781920&bugId=CSCut82049",
+					"protocol": "https",
+					"host": [
+						"mimir-prod",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"api",
+						"mimir",
+						"sora",
+						"account_specific_comments_project"
+					],
+					"query": [
+						{
+							"key": "projectId",
+							"value": "781920"
+						},
+						{
+							"key": "bugId",
+							"value": "CSCut82049"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mimir-prod.cisco.com/api/mimir/sora/customer_list?typeYN=typeYN",
+					"protocol": "https",
+					"host": [
+						"mimir-prod",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"api",
+						"mimir",
+						"sora",
+						"customer_list"
+					],
+					"query": [
+						{
+							"key": "typeYN",
+							"value": "typeYN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Account comments By Bug",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mimir-prod.cisco.com/api/mimir/sora/customer_accountcomments_by_bug?bugId=CSCut82049",
+					"protocol": "https",
+					"host": [
+						"mimir-prod",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"api",
+						"mimir",
+						"sora",
+						"customer_accountcomments_by_bug"
+					],
+					"query": [
+						{
+							"key": "bugId",
+							"value": "CSCut82049"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

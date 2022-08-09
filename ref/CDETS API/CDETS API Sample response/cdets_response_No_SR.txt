@@ -1,0 +1,1086 @@
+{
+   "CDETS": {
+      "@xmlns": "cdetsng",
+      "@xmlns:ns2": "http://www.w3.org/1999/xlink",
+      "Defect": {
+         "@id": "CSCvu22625",
+         "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvu22625",
+         "Field": [
+            {
+               "@name": "Activity-when-found",
+               "#text": "Feature/ Functionality Testing"
+            },
+            {
+               "@name": "Archived",
+               "#text": "N"
+            },
+            {
+               "@name": "Assigned Date",
+               "#text": "05/28/2020 05:29:00"
+            },
+            {
+               "@name": "Assigner",
+               "#text": "ytangutu"
+            },
+            {
+               "@name": "Attachment-created",
+               "#text": "2020-06-05T03:44:49+0000,2020-06-05T03:44:32+0000,2020-06-04T12:05:33+0000,2020-06-04T10:49:42+0000,2020-06-04T07:20:20+0000,2020-06-04T07:16:41+0000,2020-06-04T06:36:44+0000,2020-06-02T13:12:55+0000,2020-06-02T12:20:27+0000,2020-06-02T11:47:34+0000,2020-06-02T11:45:51+0000,2020-05-21T03:28:41+0000"
+            },
+            {
+               "@name": "Attachment-title",
+               "#text": "Diffs-commit-polaris_dev,polaris_dev-code_reviews,SSR_report_for_petra_sanity_IOU_IOS_polaris_dev_p3,SSR_report_for_Host_ut_test_uploader_polaris_dev_p4,SSR_report_for_petra_sanity_IOU_IOS_polaris_dev_p2,SSR_report_for_Host_ut_test_uploader_polaris_dev_p3,SSR_report_for_Host_ut_test_uploader_polaris_dev_p2,SSR_report_for_petra_sanity_IOU_IOS_polaris_dev,SSR_report_for_Host_ut_test_uploader_polaris_dev,fix_console.log,fix_smd.log,SMD logs issue.rtf"
+            },
+            {
+               "@name": "Attribute",
+               "#text": "xe1612-mr4 xe16124 xe16124-HARD google-macsec xe173-ccb-yes baseline"
+            },
+            {
+               "@name": "Automated-test",
+               "#text": "N"
+            },
+            {
+               "@name": "BCQURL",
+               "@ns2:href": "https://wiki.cisco.com/display/EWLCWIKI/SANET+BUG+FILING+GUIDELINES+FOR+WIRED+PLATFORMS",
+               "#text": "https://wiki.cisco.com/display/EWLCWIKI/SANET+BUG+FILING+GUIDELINES+FOR+WIRED+PLATFORMS"
+            },
+            {
+               "@name": "BCQURLOwner",
+               "#text": "vnagella"
+            },
+            {
+               "@name": "BTK-security-complete",
+               "#text": "Y"
+            },
+            {
+               "@name": "BadCodeFlag",
+               "#text": "N"
+            },
+            {
+               "@name": "Behavior-changed",
+               "#text": "N"
+            },
+            {
+               "@name": "Breakage",
+               "#text": "No"
+            },
+            {
+               "@name": "Bug-origin",
+               "#text": "Requirements"
+            },
+            {
+               "@name": "Build-platform",
+               "#text": "cat9200"
+            },
+            {
+               "@name": "Build-platform",
+               "#text": "cat9300"
+            },
+            {
+               "@name": "Build-platform",
+               "#text": "cat9400"
+            },
+            {
+               "@name": "Build-platform",
+               "#text": "cat9500"
+            },
+            {
+               "@name": "Build-platform",
+               "#text": "cat9600"
+            },
+            {
+               "@name": "By-previous-commit-value",
+               "#text": "No"
+            },
+            {
+               "@name": "Class",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "Code-reviewer",
+               "#text": "gandagun"
+            },
+            {
+               "@name": "Code-reviewer",
+               "#text": "hkotdiya"
+            },
+            {
+               "@name": "Code-reviewer",
+               "#text": "siddhver"
+            },
+            {
+               "@name": "Component",
+               "#text": "polaris-smd"
+            },
+            {
+               "@name": "Component-scenarios",
+               "#text": "Y"
+            },
+            {
+               "@name": "DE Priority Desc",
+               "#text": "medium"
+            },
+            {
+               "@name": "DE-manager",
+               "#text": "hiagrawa"
+            },
+            {
+               "@name": "DE-priority",
+               "#text": "3"
+            },
+            {
+               "@name": "DTPT-manager",
+               "#text": "ariferna"
+            },
+            {
+               "@name": "Data-classification",
+               "#text": "Cisco Confidential"
+            },
+            {
+               "@name": "Data-classification-reason",
+               "#text": "DDTS"
+            },
+            {
+               "@name": "Description",
+               "#text": "Steps to Recreate issue\n=============\n1) Configure NCS 5k and CAT9k with required MKA MACsec EAPTLS Remote auth configs without SSCI knob.\n2) Seen Dot1x EAPTLS multiple retries failure between CAT9k and NCS 5k.\n\nAttached SMD logs on CAT9k and \"show tech support on NCS 5k\"."
+            },
+            {
+               "@name": "Dev-escape-activity",
+               "#text": "Not-A-Dev-Escape"
+            },
+            {
+               "@name": "Dev-escape-resolver-opinion",
+               "#text": "N"
+            },
+            {
+               "@name": "Doc-manager",
+               "#text": "hiagrawa"
+            },
+            {
+               "@name": "Document",
+               "#text": "none"
+            },
+            {
+               "@name": "Documentation-resolution",
+               "#text": "Undefined"
+            },
+            {
+               "@name": "Documents-changed",
+               "#text": "none"
+            },
+            {
+               "@name": "Engineer",
+               "#text": "sagarg"
+            },
+            {
+               "@name": "Est-fix-date",
+               "#text": "06/05/2020 00:00:00"
+            },
+            {
+               "@name": "Feature",
+               "#text": "fix"
+            },
+            {
+               "@name": "Forwarded-on",
+               "#text": "08/20/2020 10:50:57"
+            },
+            {
+               "@name": "Forwarded-to",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "Forwarder",
+               "#text": "smeksava"
+            },
+            {
+               "@name": "Found",
+               "#text": "interop-test"
+            },
+            {
+               "@name": "Found-during",
+               "#text": "Interop Test"
+            },
+            {
+               "@name": "Hardening",
+               "#text": "N"
+            },
+            {
+               "@name": "Hardware-ios",
+               "#text": "none"
+            },
+            {
+               "@name": "Hardware-query",
+               "#text": "none"
+            },
+            {
+               "@name": "Headline",
+               "#text": "Dot1x EAPTLS session multiple retries failed between CAT9k, NCS 5k."
+            },
+            {
+               "@name": "I-reason",
+               "#text": "Need info from Submitter"
+            },
+            {
+               "@name": "Identifier",
+               "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvu22625",
+               "#text": "CSCvu22625"
+            },
+            {
+               "@name": "Impact",
+               "#text": "Interoperability"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "17.4(0.47)"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "17.4.1"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "Bengaluru-17.4.1"
+            },
+            {
+               "@name": "Is-customer-visible",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-dblanken-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-shared-component",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-teacat-integrated",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-edp-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-eval-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-expert-eval",
+               "#text": "N"
+            },
+            {
+               "@name": "Junked-on",
+               "#text": "05/24/2020 14:00:53"
+            },
+            {
+               "@name": "Keyword",
+               "#text": "dot1x"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 9300 Series Switches"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 9400 Series Switches"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 9600 Series Switches"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 9200 Series Switches"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 9500 Series Switches"
+            },
+            {
+               "@name": "Mean-time-to-assigned",
+               "#text": "15"
+            },
+            {
+               "@name": "Mean-time-to-resolved",
+               "#text": "23"
+            },
+            {
+               "@name": "More-by",
+               "#text": "sagarg"
+            },
+            {
+               "@name": "More-on",
+               "#text": "06/04/2020 21:47:18"
+            },
+            {
+               "@name": "New-on",
+               "#text": "05/12/2020 07:40:08"
+            },
+            {
+               "@name": "Not-customer-visible-reason",
+               "#text": "Defect ignored - The IGNORE/PREFCS flags are in the RNE"
+            },
+            {
+               "@name": "Note-created",
+               "#text": "2020-10-14T19:16:43+0000,2020-09-17T19:59:30+0000,2020-09-17T19:44:23+0000,2020-09-17T19:29:17+0000,2020-06-05T10:08:31+0000,2020-06-04T11:08:54+0000,2020-06-04T09:34:42+0000,2020-06-04T06:44:50+0000,2020-06-02T12:33:46+0000,2020-06-01T05:31:47+0000,2020-05-28T12:29:00+0000,2020-05-24T21:00:53+0000,2020-05-21T03:35:48+0000,2020-05-21T03:32:04+0000,2020-05-17T11:54:54+0000,2020-05-13T17:27:04+0000,2020-05-12T14:40:08+0000,2020-05-12T14:40:08+0000"
+            },
+            {
+               "@name": "Note-title",
+               "#text": "cms-log,Email-in.p2,Email-in.p1,Email-in,Eng-notes,static-analysis-runinfo-polaris_dev.p3,Unit-Test,static-analysis-runinfo-polaris_dev.p2,static-analysis-runinfo-polaris_dev,github-code-review-polaris_dev,A-comments.p2,J-comments,A-comments,I-comments.p2,I-comments,Scrubnote,Release-note,SS-Eval"
+            },
+            {
+               "@name": "Opened-on",
+               "#text": "06/04/2020 21:47:18"
+            },
+            {
+               "@name": "Opener",
+               "#text": "sagarg"
+            },
+            {
+               "@name": "Origin",
+               "#text": "requirements"
+            },
+            {
+               "@name": "Original-activity-when-found",
+               "#text": "Feature/ Functionality Testing"
+            },
+            {
+               "@name": "Original-found",
+               "#text": "interop-test"
+            },
+            {
+               "@name": "Original-found-during",
+               "#text": "Interop Test"
+            },
+            {
+               "@name": "Original-resolved-on",
+               "#text": "06/04/2020 21:47:18"
+            },
+            {
+               "@name": "Original-version",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "Other-mail",
+               "#text": "sgoginen, bhjohn, selvakus, gselvana, abaditya, yamarthy"
+            },
+            {
+               "@name": "PSIRT",
+               "#text": "N"
+            },
+            {
+               "@name": "Product",
+               "#text": "all"
+            },
+            {
+               "@name": "Product-owner",
+               "#text": "dlapier"
+            },
+            {
+               "@name": "Project",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "RNE-Type",
+               "#text": "$$IGNORE"
+            },
+            {
+               "@name": "RNE_Type",
+               "#text": "$$IGNORE"
+            },
+            {
+               "@name": "Regression",
+               "#text": "N"
+            },
+            {
+               "@name": "Release-Ops-Manager",
+               "#text": "dmanchan"
+            },
+            {
+               "@name": "Released-code",
+               "#text": "Y"
+            },
+            {
+               "@name": "Resolved-on",
+               "#text": "06/04/2020 21:47:18"
+            },
+            {
+               "@name": "Resolver",
+               "#text": "sagarg"
+            },
+            {
+               "@name": "Reti-bug",
+               "#text": "Y"
+            },
+            {
+               "@name": "Security-screening-timestamp",
+               "#text": "08/20/2020 14:07:17"
+            },
+            {
+               "@name": "Serviceability-reason",
+               "#text": "No"
+            },
+            {
+               "@name": "Severity",
+               "#text": "2"
+            },
+            {
+               "@name": "Severity-desc",
+               "#text": "severe"
+            },
+            {
+               "@name": "Software-ios",
+               "#text": "BLD_V1612_THROTTLE_LATEST_20200430_001416"
+            },
+            {
+               "@name": "Software-query",
+               "#text": "BLD_V1612_THROTTLE_LATEST_20200430_001416"
+            },
+            {
+               "@name": "Status",
+               "#text": "R"
+            },
+            {
+               "@name": "Status-desc",
+               "#text": "R-Resolved"
+            },
+            {
+               "@name": "Submitted-on",
+               "#text": "05/12/2020 07:40:08"
+            },
+            {
+               "@name": "Submitter",
+               "#text": "ytangutu"
+            },
+            {
+               "@name": "Submitter-manager",
+               "#text": "bhjohn"
+            },
+            {
+               "@name": "Submitter-org-bug",
+               "#text": "EN Eng  Switching Access - India"
+            },
+            {
+               "@name": "Sys-Last-Updated",
+               "#text": "05/03/2021 09:16:28"
+            },
+            {
+               "@name": "TPS_flag",
+               "#text": "N"
+            },
+            {
+               "@name": "TPS_issue",
+               "#text": "N"
+            },
+            {
+               "@name": "Test-EDP-activity",
+               "#text": "Feature/ Functionality Testing"
+            },
+            {
+               "@name": "Test-EDP-phase",
+               "#text": "Feature Test"
+            },
+            {
+               "@name": "Test-escape",
+               "#text": "Y"
+            },
+            {
+               "@name": "Tickets-count",
+               "#text": "0"
+            },
+            {
+               "@name": "Updated",
+               "#text": "05/03/2021 09:16:28"
+            },
+            {
+               "@name": "Urgency-desc",
+               "#text": "NA"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "17.4.1"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "17.4.1a"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "17.4.1b"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "17.5.1"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "17.5.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.1.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.1.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.1.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.1.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1d"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1e"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1f"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1g"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1i"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1t"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1w"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1x"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1y"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1z"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2t"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.3a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.3s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.4a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.5a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.5b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.2.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.2.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.10"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.11"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.3a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.5a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.5b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.5c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.6"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.7"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.8"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.3.9"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.4.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.4.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.4.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.5.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.5.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.5.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.5.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.5.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.2s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.4a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.4s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.5a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.5b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.6"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.7"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.7a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.8"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.9"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1d"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1e"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1d"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.2a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.2s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3h"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.4c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.5f"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.6"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.7"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1t"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1r"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1v"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1w"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1x"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.2a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.3a"
+            },
+            {
+               "@name": "Version",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "kbmp_flg",
+               "#text": "N"
+            }
+         ]
+      }
+   }
+}

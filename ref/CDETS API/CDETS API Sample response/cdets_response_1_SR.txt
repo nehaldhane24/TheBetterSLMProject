@@ -1,0 +1,959 @@
+{
+   "CDETS": {
+      "@xmlns": "cdetsng",
+      "@xmlns:ns2": "http://www.w3.org/1999/xlink",
+      "Defect": {
+         "@id": "CSCvy17498",
+         "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvy17498",
+         "Field": [
+            {
+               "@name": "Activity-when-found",
+               "#text": "Customer-Use"
+            },
+            {
+               "@name": "Apply-to",
+               "#text": "17.7.1"
+            },
+            {
+               "@name": "Archived",
+               "#text": "N"
+            },
+            {
+               "@name": "Assigned Date",
+               "#text": "04/30/2021 02:21:27"
+            },
+            {
+               "@name": "Assigner",
+               "#text": "sunigoka"
+            },
+            {
+               "@name": "Attachment-created",
+               "#text": "2021-05-13T07:52:11+0000,2021-05-11T21:02:10+0000,2021-05-11T21:01:47+0000,2021-05-11T17:43:28+0000,2021-05-08T00:25:25+0000,2021-05-06T19:48:53+0000,2021-04-30T16:20:24+0000,2021-04-29T11:07:25+0000,2021-04-29T11:04:33+0000,2021-04-29T10:58:28+0000,2021-04-29T10:45:31+0000"
+            },
+            {
+               "@name": "Attachment-title",
+               "#text": "Not-Required-In-v1612_throttle,Diffs-commit-polaris_dev,polaris_dev-code_reviews,Unit-Test-polaris_dev_ver2,Unit-Test-polaris_dev,Release-note-diff,gnosis_neg_freeform.txt,crashinfo_RP_00_00_20210216-150311,system-report_3_20210215-222132.tar.gz,system-report_1_20210216-150606.tar.gz,show-tech.txt"
+            },
+            {
+               "@name": "Attribute",
+               "#text": "gnosis  ed_ic_arch xe176-nooib"
+            },
+            {
+               "@name": "Automated-test",
+               "#text": "N"
+            },
+            {
+               "@name": "BCQURL",
+               "@ns2:href": "https://wiki.cisco.com/display/POLARISENG/Bug+Filing+Guidelines",
+               "#text": "https://wiki.cisco.com/display/POLARISENG/Bug+Filing+Guidelines"
+            },
+            {
+               "@name": "BCQURLOwner",
+               "#text": "vikannap"
+            },
+            {
+               "@name": "BTK-security-complete",
+               "#text": "Y"
+            },
+            {
+               "@name": "BadCodeFlag",
+               "#text": "N"
+            },
+            {
+               "@name": "Behavior-changed",
+               "#text": "N"
+            },
+            {
+               "@name": "Breakage",
+               "#text": "No"
+            },
+            {
+               "@name": "Bug-origin",
+               "#text": "Code / Implementation"
+            },
+            {
+               "@name": "By-previous-commit-value",
+               "#text": "No"
+            },
+            {
+               "@name": "Care-Update",
+               "#text": "Y"
+            },
+            {
+               "@name": "Class",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "Code-reviewer",
+               "#text": "gclendon"
+            },
+            {
+               "@name": "Code-reviewer",
+               "#text": "mfaggion"
+            },
+            {
+               "@name": "Component",
+               "#text": "iosxe-p-db"
+            },
+            {
+               "@name": "Component-scenarios",
+               "#text": "N"
+            },
+            {
+               "@name": "Conditions",
+               "#text": "An unforced system reload may be observed on Cisco Systems devices running IOS-XE versions 16.12 and above if the user executes the command \"show platform software crimson operation statistics table\""
+            },
+            {
+               "@name": "DE Priority Desc",
+               "#text": "medium"
+            },
+            {
+               "@name": "DE-manager",
+               "#text": "vikannap"
+            },
+            {
+               "@name": "DE-priority",
+               "#text": "3"
+            },
+            {
+               "@name": "DTPT-manager",
+               "#text": "vikannap"
+            },
+            {
+               "@name": "Data-classification",
+               "#text": "Cisco Highly Confidential"
+            },
+            {
+               "@name": "Data-classification-reason",
+               "#text": "N/A"
+            },
+            {
+               "@name": "Description",
+               "#text": "We see Catalyst 3850 switches running IOS-XE 16.12.4 crashing at the CDP process.\nFrom the crashinfo details, we can see the CDP process crashed:\n\nUNIX-EXT-SIGNAL: Aborted(6), Process = CDP Protocol"
+            },
+            {
+               "@name": "Dev-escape-activity",
+               "#text": "Not-A-Dev-Escape"
+            },
+            {
+               "@name": "Dev-escape-resolver-opinion",
+               "#text": "N"
+            },
+            {
+               "@name": "Doc-manager",
+               "#text": "vikannap"
+            },
+            {
+               "@name": "Document",
+               "#text": "software guide"
+            },
+            {
+               "@name": "Documentation-resolution",
+               "#text": "Undefined"
+            },
+            {
+               "@name": "Documents-changed",
+               "#text": "TBD"
+            },
+            {
+               "@name": "Engineer",
+               "#text": "lsatrijo"
+            },
+            {
+               "@name": "Est-fix-date",
+               "#text": "05/17/2021 00:00:00"
+            },
+            {
+               "@name": "Feature",
+               "#text": "fix"
+            },
+            {
+               "@name": "Found",
+               "#text": "customer-use"
+            },
+            {
+               "@name": "Found-during",
+               "#text": "Customer"
+            },
+            {
+               "@name": "Hardening",
+               "#text": "N"
+            },
+            {
+               "@name": "Hardware-ios",
+               "#text": "all"
+            },
+            {
+               "@name": "Hardware-query",
+               "#text": "all"
+            },
+            {
+               "@name": "Headline",
+               "#text": "C3850 crash at CDP process running IOS-XE 16.12.4"
+            },
+            {
+               "@name": "IFD-CFD-Conv-date",
+               "#text": "04/29/2021 10:38:18"
+            },
+            {
+               "@name": "Identifier",
+               "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvy17498",
+               "#text": "CSCvy17498"
+            },
+            {
+               "@name": "Impact",
+               "#text": "Reliability"
+            },
+            {
+               "@name": "Impact",
+               "#text": "Crash"
+            },
+            {
+               "@name": "Impact",
+               "#text": "Outage"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "17.7(0.11)"
+            },
+            {
+               "@name": "Is-customer-visible",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-dblanken-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-shared-component",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-teacat-integrated",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-edp-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-eval-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-expert-eval",
+               "#text": "N"
+            },
+            {
+               "@name": "Keyword",
+               "#text": "db-infra"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 3850 Series Switches"
+            },
+            {
+               "@name": "Mean-time-to-assigned",
+               "#text": "0"
+            },
+            {
+               "@name": "Mean-time-to-resolved",
+               "#text": "13"
+            },
+            {
+               "@name": "More-by",
+               "#text": "lsatrijo"
+            },
+            {
+               "@name": "More-on",
+               "#text": "05/11/2021 14:05:31"
+            },
+            {
+               "@name": "New-on",
+               "#text": "04/29/2021 03:42:06"
+            },
+            {
+               "@name": "Note-created",
+               "#text": "2021-05-11T18:31:36+0000,2021-05-08T00:25:09+0000,2021-05-08T00:24:05+0000,2021-05-07T01:22:09+0000,2021-05-06T11:14:32+0000,2021-05-01T09:06:58+0000,2021-04-30T16:20:24+0000,2021-04-30T10:38:04+0000,2021-04-29T10:43:38+0000,2021-04-29T10:42:06+0000"
+            },
+            {
+               "@name": "Note-title",
+               "#text": "static-analysis-runinfo-polaris_dev,Static-analysis-runinfo-polaris_dev,github-code-review-polaris_dev,Eng-notes,F-comments,Email-in,KnowledgeSignature,Scrubnote,Crash-decode,Release-note"
+            },
+            {
+               "@name": "Opened-on",
+               "#text": "05/11/2021 14:05:31"
+            },
+            {
+               "@name": "Opener",
+               "#text": "lsatrijo"
+            },
+            {
+               "@name": "Origin",
+               "#text": "base code"
+            },
+            {
+               "@name": "Original-activity-when-found",
+               "#text": "Customer-Use"
+            },
+            {
+               "@name": "Original-found",
+               "#text": "customer-use"
+            },
+            {
+               "@name": "Original-found-during",
+               "#text": "Customer"
+            },
+            {
+               "@name": "Original-resolved-on",
+               "#text": "05/13/2021 00:52:57"
+            },
+            {
+               "@name": "Original-version",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "PSIRT",
+               "#text": "N"
+            },
+            {
+               "@name": "Product",
+               "#text": "3850"
+            },
+            {
+               "@name": "Product-owner",
+               "#text": "aswaroop"
+            },
+            {
+               "@name": "Project",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "RNE-Type",
+               "#text": "NONE"
+            },
+            {
+               "@name": "RNE_Type",
+               "#text": "NONE"
+            },
+            {
+               "@name": "Regression",
+               "#text": "N"
+            },
+            {
+               "@name": "Related-bugs",
+               "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvy32090",
+               "#text": "CSCvy32090"
+            },
+            {
+               "@name": "Relationship-type",
+               "#text": "Teacat"
+            },
+            {
+               "@name": "Release-Ops-Manager",
+               "#text": "smeksava"
+            },
+            {
+               "@name": "Released-code",
+               "#text": "Y"
+            },
+            {
+               "@name": "Resolved-on",
+               "#text": "05/13/2021 00:52:57"
+            },
+            {
+               "@name": "Resolver",
+               "#text": "lsatrijo"
+            },
+            {
+               "@name": "Reti-bug",
+               "#text": "Y"
+            },
+            {
+               "@name": "SR-type",
+               "#text": "C3"
+            },
+            {
+               "@name": "Security-screening-timestamp",
+               "#text": "05/07/2021 02:12:46"
+            },
+            {
+               "@name": "Severity",
+               "#text": "2"
+            },
+            {
+               "@name": "Severity-desc",
+               "#text": "severe"
+            },
+            {
+               "@name": "Software-ios",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "Software-query",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "Solution-impacted",
+               "#text": "None"
+            },
+            {
+               "@name": "Status",
+               "#text": "R"
+            },
+            {
+               "@name": "Status-desc",
+               "#text": "R-Resolved"
+            },
+            {
+               "@name": "Submitted-on",
+               "#text": "04/29/2021 03:42:06"
+            },
+            {
+               "@name": "Submitter",
+               "#text": "mgrabovs"
+            },
+            {
+               "@name": "Submitter-manager",
+               "#text": "dspindol"
+            },
+            {
+               "@name": "Submitter-org-bug",
+               "#text": "GC_EMEAR_EN_CORE_Portugal"
+            },
+            {
+               "@name": "Symptoms",
+               "#text": "We see a stack of Catalyst 3850 crash at the CDP process.\n\nThe crashes occurred after upgrading the stack to IOS-XE 16.12.4"
+            },
+            {
+               "@name": "Sys-Last-Updated",
+               "#text": "06/04/2021 09:24:15"
+            },
+            {
+               "@name": "TACSR-count",
+               "#text": "1"
+            },
+            {
+               "@name": "TPS_flag",
+               "#text": "N"
+            },
+            {
+               "@name": "TPS_issue",
+               "#text": "N"
+            },
+            {
+               "@name": "Test-EDP-activity",
+               "#text": "Code Analysis"
+            },
+            {
+               "@name": "Test-EDP-phase",
+               "#text": "Development"
+            },
+            {
+               "@name": "Test-escape",
+               "#text": "N"
+            },
+            {
+               "@name": "Tickets-count",
+               "#text": "1"
+            },
+            {
+               "@name": "Tickets-count-direct",
+               "#text": "1"
+            },
+            {
+               "@name": "To-be-fixed",
+               "#text": "17.10.1"
+            },
+            {
+               "@name": "Trouble-tickets",
+               "#text": "690849190"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3690849190"
+            },
+            {
+               "@name": "Updated",
+               "#text": "06/04/2021 09:24:15"
+            },
+            {
+               "@name": "Urgency",
+               "#text": "6"
+            },
+            {
+               "@name": "Urgency-desc",
+               "#text": "P3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1d"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1e"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1f"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1g"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1i"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.10.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.11.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1t"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1w"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1x"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1y"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.1z"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.2t"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.3a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.3s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.4a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.5a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.12.5b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.2s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.4a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.4s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.5a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.5b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.6"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.7"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.7a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.8"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.6.9"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.7.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1d"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1e"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.8.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1d"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.2a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.2s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3h"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.3s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.4c"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.5f"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.6"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "16.9.7"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1s"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.1t"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.1.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1r"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.1v"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.2.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1w"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.1x"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.2a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.3.3a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.4.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.4.1a"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.4.1b"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.5.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "17.5.1a"
+            },
+            {
+               "@name": "Version",
+               "#text": "16.12.4"
+            },
+            {
+               "@name": "Workarounds",
+               "#text": "Do not execute the show command \"show platform software crimson operation statistics table\""
+            },
+            {
+               "@name": "kbmp_flg",
+               "#text": "N"
+            }
+         ]
+      }
+   }
+}

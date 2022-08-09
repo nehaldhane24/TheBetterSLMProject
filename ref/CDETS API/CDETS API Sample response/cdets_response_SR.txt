@@ -1,0 +1,513 @@
+{
+   "CDETS": {
+      "@xmlns": "cdetsng",
+      "@xmlns:ns2": "http://www.w3.org/1999/xlink",
+      "Defect": {
+         "@id": "CSCvv72609",
+         "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvv72609",
+         "Field": [
+            {
+               "@name": "Activity-when-found",
+               "#text": "Customer-Use"
+            },
+            {
+               "@name": "Archived",
+               "#text": "N"
+            },
+            {
+               "@name": "Assigned Date",
+               "#text": "06/23/2021 02:47:56"
+            },
+            {
+               "@name": "Assigner",
+               "#text": "greddyk"
+            },
+            {
+               "@name": "Attachment-created",
+               "#text": "2021-06-25T06:18:37+0000,2021-06-25T05:14:02+0000,2021-06-24T18:15:55+0000,2021-06-24T17:59:56+0000,2021-06-23T09:48:30+0000,2021-06-07T08:16:08+0000,2021-06-07T08:15:59+0000,2021-04-09T16:44:42+0000,2021-04-09T16:44:41+0000,2021-01-05T06:40:48+0000,2021-01-05T06:38:44+0000,2021-01-04T07:31:52+0000,2020-09-15T11:51:22+0000"
+            },
+            {
+               "@name": "Attachment-title",
+               "#text": "Diffs-commit-comp_smart_lic_5_1_rel,ELO-smart-licensing-code-review-2,Diffs-commit-comp_smart_lic_5_3_rel,ELO-smart-licensing-code-review,Latest-debug-image-log.txt,traceback-btrace-log.txt,Latest-repro-in-polaris_dev-log.txt,gnosis_pos_sample.txt,gnosis_neg_9400-neg.txt,Release-note-diff,More-details.txt,Latest-repro-logs.txt,Console-Log.txt"
+            },
+            {
+               "@name": "Attribute",
+               "#text": "gnosis TRANS longevity pi-long-sep -OIB xe173-oib LANSW-CFD \n ed_ic_ent_switching \n ed_ic_arch"
+            },
+            {
+               "@name": "Automated-test",
+               "#text": "N"
+            },
+            {
+               "@name": "BTK-security-complete",
+               "#text": "Y"
+            },
+            {
+               "@name": "BadCodeFlag",
+               "#text": "N"
+            },
+            {
+               "@name": "Care-Update",
+               "#text": "Y"
+            },
+            {
+               "@name": "Class",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "Component",
+               "#text": "smart_agent_c"
+            },
+            {
+               "@name": "Component-scenarios",
+               "#text": "N"
+            },
+            {
+               "@name": "Conditions",
+               "#text": "Smart Licensing and RUM reports are used in the device. The CPU usage triggers when the RUM report list is used.\n\nTo confirm run 'show license tech support':\n\n<div style=\"font-family:courier;white-space:pre;\">\n# show license tech support | include RUM reports\n\nSend Utility RUM reports: Feb 22 16:04:53 2021 MET (34 minutes, 45 seconds remaining)\nSave unreported RUM Reports: Feb 22 16:21:26 2021 MET (51 minutes, 18 seconds remaining)\nProcess Utility RUM reports: Feb 22 17:04:38 2021 MET (1 hours, 34 minutes, 30 seconds remaining)\n</div>"
+            },
+            {
+               "@name": "DE Priority Desc",
+               "#text": "medium"
+            },
+            {
+               "@name": "DE-manager",
+               "#text": "paakella"
+            },
+            {
+               "@name": "DE-priority",
+               "#text": "3"
+            },
+            {
+               "@name": "DTPT-manager",
+               "#text": "paakella"
+            },
+            {
+               "@name": "Data-classification",
+               "#text": "Cisco Highly Confidential"
+            },
+            {
+               "@name": "Data-classification-reason",
+               "#text": "Default value of Data-classification set to Cisco Highly Confidential by system due to the presence of C3/CAP service request."
+            },
+            {
+               "@name": "Description",
+               "#text": "Description:-\n======== \n On loading/bootup 17.3 image on IOS-XE device, observing that CPU utilization went to 98% and device console is will struck for every 3-5 mins once and new image copy from tftp will get timeout.\n\nC9400-48P#sh processes cpu sorted \nCPU utilization for five seconds: 100%/0%; one minute: 91%; five minutes: 40%\n PID Runtime(ms)     Invoked      uSecs   5Sec   1Min   5Min TTY Process \n 142      136934        4064      33694 98.62% 87.41% 36.06%   0 SAGetRUMIds      \n 500         464        2983        155  0.39%  0.27%  0.13%   0 SLE DB Util      \n 102        1216         229       5310  0.31%  0.31%  0.20%   0 Crimson flush tr \n 146          21          13       1615  0.15%  0.01%  0.00%   0 Per-minute Jobs  \n  66          44        3184         13  0.07%  0.02%  0.00%   0 SASRcvWQ         \n   6           0           2          0  0.00%  0.00%  0.00%   0 IPC ISSU Dispatc \n   7           0           1          0  0.00%  0.00%  0.00%   0 RO Notify Timers \n   8         130          21       6190  0.00%  0.06%  0.02%   0 Check heaps\n\nLabel:- BLD_V173_THROTTLE_LATEST_20200830_002908_2\nimage:- cat9k_iosxe.BLD_V173_THROTTLE_LATEST_20200830_002908_2.SSA.bin\nplatform: c9400 HA\n\nsteps:- \n1). Load above image on an IOS-XE device setup. \n2). Once active RP is verify the show process cpu history and show process cpu sorted output. Even after 15 mins of standby comes up, still see CPU spike upto 98%.\n\nPleas see enclosure Console_Log for detailed log."
+            },
+            {
+               "@name": "Dev-escape",
+               "#text": "Y"
+            },
+            {
+               "@name": "Doc-manager",
+               "#text": "paakella"
+            },
+            {
+               "@name": "Document",
+               "#text": "none"
+            },
+            {
+               "@name": "Documentation-resolution",
+               "#text": "Undefined"
+            },
+            {
+               "@name": "Engineer",
+               "#text": "soumdas2"
+            },
+            {
+               "@name": "Feature",
+               "#text": "fix"
+            },
+            {
+               "@name": "Forwarded-on",
+               "#text": "02/24/2021 06:34:07"
+            },
+            {
+               "@name": "Forwarded-to",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "Forwarder",
+               "#text": "dspindol"
+            },
+            {
+               "@name": "Found",
+               "#text": "customer-use"
+            },
+            {
+               "@name": "Found-during",
+               "#text": "Customer"
+            },
+            {
+               "@name": "Further-Problem-Description",
+               "#text": "When this event triggers gather the command 'show stack <pid>' and use the process identifier (PID) of the processes. This evidence is useful when a TAC case is opened."
+            },
+            {
+               "@name": "Hardening",
+               "#text": "N"
+            },
+            {
+               "@name": "Hardware-ios",
+               "#text": "none"
+            },
+            {
+               "@name": "Hardware-query",
+               "#text": "none"
+            },
+            {
+               "@name": "Headline",
+               "#text": "SmartLicense: High CPU usage triggered by RUM reports"
+            },
+            {
+               "@name": "I-reason",
+               "#text": "Need Issue Reproduction"
+            },
+            {
+               "@name": "IFD-CFD-Conv-date",
+               "#text": "02/24/2021 06:34:07"
+            },
+            {
+               "@name": "Identifier",
+               "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvv72609",
+               "#text": "CSCvv72609"
+            },
+            {
+               "@name": "Impact",
+               "#text": "Performance"
+            },
+            {
+               "@name": "Is-customer-visible",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-dblanken-reqd",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-shared-component",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-teacat-integrated",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-edp-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-eval-reqd",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-test-expert-eval",
+               "#text": "N"
+            },
+            {
+               "@name": "Keyword",
+               "#text": "NONE"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Cloud Services Router 1000V Series"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 8500L Series Edge Platforms"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 8500 Series Edge Platforms"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 8300 Series Edge Universal CPE"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 8300 Series Edge Platforms"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco Catalyst 8200 Series Edge Platforms"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco ASR 1000 Series Aggregation Services Routers"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco 4000 Series Integrated Services Routers"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco 1100 Series Routers"
+            },
+            {
+               "@name": "Mean-time-to-assigned",
+               "#text": "280"
+            },
+            {
+               "@name": "Multi-commit-flag",
+               "#text": "Y"
+            },
+            {
+               "@name": "New-on",
+               "#text": "09/15/2020 04:51:22"
+            },
+            {
+               "@name": "Note-created",
+               "#text": "2021-06-23T09:47:56+0000,2021-06-23T04:49:54+0000,2021-06-07T08:15:23+0000,2021-06-03T10:00:26+0000,2021-05-28T05:56:10+0000,2021-05-24T10:28:31+0000,2021-04-29T09:10:40+0000,2021-04-11T20:05:26+0000,2021-04-09T16:44:37+0000,2021-04-06T22:13:02+0000,2021-02-24T16:20:35+0000,2021-02-24T16:19:04+0000,2021-01-05T06:37:58+0000,2021-01-04T17:09:30+0000,2021-01-04T07:31:16+0000,2020-12-02T05:17:27+0000,2020-11-12T07:33:13+0000,2020-09-15T11:51:22+0000,2020-09-15T11:51:22+0000"
+            },
+            {
+               "@name": "Note-title",
+               "#text": "A-comments.p5,I-comments.p6,A-comments.p4,Email-in,I-comments.p5,A-comments.p3,U-comments.p2,I-comments.p4,KnowledgeSignature,Scrubnote,SS-Review,TAC-Tshoot,A-comments.p2,I-comments.p2,A-comments,U-comments,I-comments,Release-note,SS-Eval"
+            },
+            {
+               "@name": "Original-activity-when-found",
+               "#text": "Stress/ Error Handling"
+            },
+            {
+               "@name": "Original-found",
+               "#text": "func-test"
+            },
+            {
+               "@name": "Original-found-during",
+               "#text": "Feature Test"
+            },
+            {
+               "@name": "Original-version",
+               "#text": "17.3"
+            },
+            {
+               "@name": "Other-mail",
+               "#text": "soumdas2"
+            },
+            {
+               "@name": "PSIRT",
+               "#text": "N"
+            },
+            {
+               "@name": "Product",
+               "#text": "all"
+            },
+            {
+               "@name": "Project",
+               "#text": "CSC.sys"
+            },
+            {
+               "@name": "RNE-Type",
+               "#text": "NONE"
+            },
+            {
+               "@name": "RNE_Type",
+               "#text": "NONE"
+            },
+            {
+               "@name": "Release-Ops-Manager",
+               "#text": "paakella"
+            },
+            {
+               "@name": "Reti-bug",
+               "#text": "Y"
+            },
+            {
+               "@name": "SR-type",
+               "#text": "C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3,C3"
+            },
+            {
+               "@name": "Security-screening-timestamp",
+               "#text": "06/11/2021 07:22:01"
+            },
+            {
+               "@name": "Serviceability-reason",
+               "#text": "TBD"
+            },
+            {
+               "@name": "Severity",
+               "#text": "2"
+            },
+            {
+               "@name": "Severity-desc",
+               "#text": "severe"
+            },
+            {
+               "@name": "Software-ios",
+               "#text": "all"
+            },
+            {
+               "@name": "Software-query",
+               "#text": "all"
+            },
+            {
+               "@name": "Solution-impacted",
+               "#text": "None"
+            },
+            {
+               "@name": "Status",
+               "#text": "A"
+            },
+            {
+               "@name": "Status-desc",
+               "#text": "A-Assigned"
+            },
+            {
+               "@name": "Submitted-on",
+               "#text": "09/15/2020 04:51:22"
+            },
+            {
+               "@name": "Submitter",
+               "#text": "greddyk"
+            },
+            {
+               "@name": "Submitter-manager",
+               "#text": "dkuduvas"
+            },
+            {
+               "@name": "Submitter-org-bug",
+               "#text": "EN Eng PI IOS/XE Polaris - India"
+            },
+            {
+               "@name": "Symptoms",
+               "#text": "The affected device shows evidence of high CPU usage triggered by 'SAGetRUMIds' or 'SAUtilRepSave', in some scenarios even both:\n\n<div style=\"font-family:courier;white-space:pre;\">\n5ndebbst02#sho proc cpu sort\nCPU utilization for five seconds: 100%/1%; one minute: 61%; five minutes: 28%\n PID Runtime(ms)     Invoked      uSecs   5Sec   1Min   5Min TTY Process \n 662   272007421    19185503      14177 60.00% 45.62% 13.41%   0 SAGetRUMIds      \n 150   310763355    20821285      14925 38.03% 12.50% 13.43%   0 SAUtilRepSave \n</div>"
+            },
+            {
+               "@name": "Sys-Last-Updated",
+               "#text": "06/28/2021 07:04:22"
+            },
+            {
+               "@name": "TACSR-count",
+               "#text": "20"
+            },
+            {
+               "@name": "Test-escape",
+               "#text": "N"
+            },
+            {
+               "@name": "Tickets-count",
+               "#text": "20"
+            },
+            {
+               "@name": "Tickets-count-direct",
+               "#text": "20"
+            },
+            {
+               "@name": "To-be-fixed",
+               "#text": "17.5.1"
+            },
+            {
+               "@name": "Trouble-tickets",
+               "#text": "690885932;690914826;690924291;691164235;691177551;691348845;691393869;691393048;691412922;691479374;691546326;691578919;691601285;691563638;691604039;691641273;691656725;691242914;691550633;691686282"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691412922"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691479374"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691177551"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691604039"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691578919"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691656725"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691164235"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691601285"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691550633"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691641273"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691242914"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691393869"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3690885932"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691563638"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3690914826"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3690924291"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691393048"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691348845"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691546326"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3691686282"
+            },
+            {
+               "@name": "Unreproducible",
+               "#text": "04/29/2021 02:10:40"
+            },
+            {
+               "@name": "Updated",
+               "#text": "06/28/2021 07:04:22"
+            },
+            {
+               "@name": "Urgency",
+               "#text": "6"
+            },
+            {
+               "@name": "Urgency-desc",
+               "#text": "P3"
+            },
+            {
+               "@name": "Version",
+               "#text": "17.3"
+            },
+            {
+               "@name": "Workarounds",
+               "#text": "Delete the RUM reports list.\nlicense smart factory reset \n%Warning: reload required after \"license smart factory reset\" command"
+            },
+            {
+               "@name": "kbmp_flg",
+               "#text": "N"
+            }
+         ]
+      }
+   }
+}

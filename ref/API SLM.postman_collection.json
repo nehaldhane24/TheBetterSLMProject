@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "1078d911-0664-4fa5-a6ba-3ab4f893786e",
+		"name": "API SLM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generate OAuthToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var res = pm.response.json();\r",
+							"pm.collectionVariables.set('token', res.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "EurusClient",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "EurusClient",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "profile",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://cloudsso.cisco.com/as/token.oauth2",
+					"protocol": "https",
+					"host": [
+						"cloudsso",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"as",
+						"token.oauth2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Whether the bug(s) is applicable",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "STgfl3zrTANTYkDfjMhlO9w1A2vh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-supplychain.cisco.com/pdafapp/common/1.0/getMPBugDetails?osType=N&release=7.3(1)D1(1)&prodFamily=Cisco Nexus 7000 Series Switches&limit=10",
+					"protocol": "https",
+					"host": [
+						"api-supplychain",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"pdafapp",
+						"common",
+						"1.0",
+						"getMPBugDetails"
+					],
+					"query": [
+						{
+							"key": "osType",
+							"value": "N"
+						},
+						{
+							"key": "release",
+							"value": "7.3(1)D1(1)"
+						},
+						{
+							"key": "prodFamily",
+							"value": "Cisco Nexus 7000 Series Switches"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List master project information",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"osType\": \"I\",\r\n    \"inputParams\": {\r\n        \"projId\": \":780476\"\r\n    },\r\n    \"limit\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://api-supplychain.cisco.com/pdafapp/masterproject/2.0/getMasterProjects",
+					"protocol": "https",
+					"host": [
+						"api-supplychain",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"pdafapp",
+						"masterproject",
+						"2.0",
+						"getMasterProjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check if master project is active",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"osType\": \"I\",\r\n    \"productFamily\": \"Cisco Catalyst 9500 Series Switches\",\r\n    \"releaseDetail\": \"16.12.6\",\r\n   \"createdDate\": \"2022-03-03\",\r\n    \"timeFrame\": \"1year\",\r\n    \"inputParams\": {},\r\n    \"limit\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-supplychain.cisco.com/pdafapp/MasterProjects_Profile_Details/2.0/getMPProfileDetails",
+					"protocol": "https",
+					"host": [
+						"api-supplychain",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"pdafapp",
+						"MasterProjects_Profile_Details",
+						"2.0",
+						"getMPProfileDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get audit details of the generated reports",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputParams\": {\r\n        \"PROFILEID\": \"5862\"\r\n    },\r\n    \"limit\": 10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-supplychain.cisco.com/pdafapp/Reports_Audit/2.0/getReportsAudit",
+					"protocol": "https",
+					"host": [
+						"api-supplychain",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"pdafapp",
+						"Reports_Audit",
+						"2.0",
+						"getReportsAudit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile Bug Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contractId\": \"5862\",\r\n    \"custName\": \"S&P GLOBAL\",\r\n    \"profileName\": \"ISR 4K ASR 1K 17.6.3\",\r\n    \"deliverables\": \"SARS\",\r\n    \"limit\": 100\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-supplychain.cisco.com/pdafapp/profiles_buglist_global_users/2.0/getProfileBugsListGU",
+					"protocol": "https",
+					"host": [
+						"api-supplychain",
+						"cisco",
+						"com"
+					],
+					"path": [
+						"pdafapp",
+						"profiles_buglist_global_users",
+						"2.0",
+						"getProfileBugsListGU"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}

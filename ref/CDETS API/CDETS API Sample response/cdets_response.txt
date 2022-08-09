@@ -1,0 +1,1302 @@
+{
+   "CDETS": {
+      "@xmlns": "cdetsng",
+      "@xmlns:ns2": "http://www.w3.org/1999/xlink",
+      "Defect": {
+         "@id": "CSCvw09246",
+         "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvw09246",
+         "Field": [
+            {
+               "@name": "Activity-when-found",
+               "#text": "Customer-Use"
+            },
+            {
+               "@name": "Archived",
+               "#text": "N"
+            },
+            {
+               "@name": "Assigned Date",
+               "#text": "10/15/2020 06:53:23"
+            },
+            {
+               "@name": "Assigner",
+               "#text": "bhuie"
+            },
+            {
+               "@name": "Attachment-created",
+               "#text": "2021-01-04T22:50:45+0000,2021-01-04T22:50:45+0000,2020-11-13T09:29:48+0000,2020-11-13T09:29:47+0000,2020-11-13T01:04:09+0000,2020-11-12T16:49:54+0000,2020-11-11T04:19:23+0000,2020-10-15T14:24:13+0000,2020-10-15T14:16:00+0000"
+            },
+            {
+               "@name": "Attachment-title",
+               "#text": "gnosis_neg_freeform.txt,gnosis_pos_freeform.txt,heuristic3-tagged-plats,orig-tagged-plats,Diffs-commit-r73x,Release-note-diff,Diffs-commit-main,FireX_Analysis,viking-ether-services-code-review-code-review"
+            },
+            {
+               "@name": "Attribute",
+               "#text": "gnosis cafyap-git-id-21514 asr9k_l2_pd_triage TSHF-SIT"
+            },
+            {
+               "@name": "Automated-test",
+               "#text": "N"
+            },
+            {
+               "@name": "BCQURL",
+               "@ns2:href": "http://wwwin-engineering.cisco.com/manmukhe/triage-autosuggest/",
+               "#text": "http://wwwin-engineering.cisco.com/manmukhe/triage-autosuggest/"
+            },
+            {
+               "@name": "BCQURLOwner",
+               "#text": "manmukhe"
+            },
+            {
+               "@name": "BTK-security-complete",
+               "#text": "Y"
+            },
+            {
+               "@name": "BadCodeFlag",
+               "#text": "N"
+            },
+            {
+               "@name": "Behavior-changed",
+               "#text": "N"
+            },
+            {
+               "@name": "Breakage",
+               "#text": "No"
+            },
+            {
+               "@name": "Bug-origin",
+               "#text": "Design"
+            },
+            {
+               "@name": "Build-platform",
+               "#text": "asr9k-x64"
+            },
+            {
+               "@name": "Build-platform",
+               "#text": "xrv9k"
+            },
+            {
+               "@name": "By-previous-commit-value",
+               "#text": "No"
+            },
+            {
+               "@name": "Care-Update",
+               "#text": "Y"
+            },
+            {
+               "@name": "Class",
+               "#text": "CSC.ena"
+            },
+            {
+               "@name": "Code-reviewer",
+               "#text": "meizhang"
+            },
+            {
+               "@name": "Code-reviewer",
+               "#text": "richarwo"
+            },
+            {
+               "@name": "Component",
+               "#text": "asr9k-l2vpn"
+            },
+            {
+               "@name": "Component-scenarios",
+               "#text": "N"
+            },
+            {
+               "@name": "Conditions",
+               "#text": "1. The memory leak is seen when OSPF adjacency is flapped constantly. \n2. We could reproduce the issue only when single VPLS bridge-domain had 100+ PW's to unique next-hops. Below config was using for the repro (180 unique next-hops in same bd).\n     RP/0/RSP0/CPU0:ASR-9006-B#show l2vpn bridge-domain brief \n     Thu Nov 12 10:34:24.953 UTC\n      Legend: pp = Partially Programmed.\n      Bridge Group:Bridge-Domain Name  ID    State          Num ACs/up   Num PWs/up    Num PBBs/up Num VNIs/up\n-------------------------------- ----- -------------- ------------ ------------- ----------- -----------\n      test:test                 0     up             1/1          180/180       0/0         0/0        \n      RP/0/RSP0/CPU0:ASR-9006-B#"
+            },
+            {
+               "@name": "DE Priority Desc",
+               "#text": "medium"
+            },
+            {
+               "@name": "DE-manager",
+               "#text": "todlopez"
+            },
+            {
+               "@name": "DE-priority",
+               "#text": "3"
+            },
+            {
+               "@name": "DTPT-manager",
+               "#text": "sanantha"
+            },
+            {
+               "@name": "Data-classification",
+               "#text": "Cisco Highly Confidential"
+            },
+            {
+               "@name": "Data-classification-reason",
+               "#text": "Default value of Data-classification set to Cisco Highly Confidential by system due to the presence of C3/CAP service request."
+            },
+            {
+               "@name": "Description",
+               "#text": "- When we have high scale l2vpn configured and there are some neighbors reached through tunnel, on tunnel flaps we may see memory leak in LC which can result in shared memory spaced being completely utilized"
+            },
+            {
+               "@name": "Dev-escape-activity",
+               "#text": "Not-A-Dev-Escape"
+            },
+            {
+               "@name": "Dev-escape-resolver-opinion",
+               "#text": "N"
+            },
+            {
+               "@name": "Doc-manager",
+               "#text": "todlopez"
+            },
+            {
+               "@name": "Document",
+               "#text": "none"
+            },
+            {
+               "@name": "Documentation-resolution",
+               "#text": "Undefined"
+            },
+            {
+               "@name": "Documents-changed",
+               "#text": "none"
+            },
+            {
+               "@name": "Engineer",
+               "#text": "bhuie"
+            },
+            {
+               "@name": "Failure-type",
+               "#text": "Wrong requirement"
+            },
+            {
+               "@name": "Feature",
+               "#text": "fix"
+            },
+            {
+               "@name": "Found",
+               "#text": "customer-use"
+            },
+            {
+               "@name": "Found-during",
+               "#text": "Customer"
+            },
+            {
+               "@name": "Hardening",
+               "#text": "N"
+            },
+            {
+               "@name": "Hardware-ios",
+               "#text": "asr9k"
+            },
+            {
+               "@name": "Hardware-query",
+               "#text": "asr9k"
+            },
+            {
+               "@name": "Headline",
+               "#text": "l2fib memory leak and shared mem high utilization after possible tunnel flap"
+            },
+            {
+               "@name": "IFD-CFD-Conv-date",
+               "#text": "10/13/2020 08:44:01"
+            },
+            {
+               "@name": "Identifier",
+               "@ns2:href": "https://cdetsng.cisco.com/wsapi/latest/api/bug/CSCvw09246",
+               "#text": "CSCvw09246"
+            },
+            {
+               "@name": "Impact",
+               "#text": "Performance"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "07.03.01.034i.BASE"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "07.03.02.013i.BASE"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "07.03.15.001i.BASE"
+            },
+            {
+               "@name": "Integrated-releases",
+               "#text": "07.04.01.006i.BASE"
+            },
+            {
+               "@name": "Is-customer-visible",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-dblanken-reqd",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-shared-component",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-teacat-integrated",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-edp-reqd",
+               "#text": "N"
+            },
+            {
+               "@name": "Is-test-eval-reqd",
+               "#text": "Y"
+            },
+            {
+               "@name": "Is-test-expert-eval",
+               "#text": "Y"
+            },
+            {
+               "@name": "Keyword",
+               "#text": "asr9k-l2vpn"
+            },
+            {
+               "@name": "Known-fixed-releases",
+               "#text": "7.3.0"
+            },
+            {
+               "@name": "Known-fixed-releases",
+               "#text": "7.3.1"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco ASR 9000 Series Aggregation Services Routers"
+            },
+            {
+               "@name": "MDF-series",
+               "#text": "Cisco IOS XRv 9000 Router"
+            },
+            {
+               "@name": "Mean-time-to-assigned",
+               "#text": "1"
+            },
+            {
+               "@name": "Mean-time-to-resolved",
+               "#text": "29"
+            },
+            {
+               "@name": "More-by",
+               "#text": "bhuie"
+            },
+            {
+               "@name": "More-on",
+               "#text": "11/12/2020 06:43:21"
+            },
+            {
+               "@name": "Multi-commit-flag",
+               "#text": "Y"
+            },
+            {
+               "@name": "New-on",
+               "#text": "10/13/2020 13:44:54"
+            },
+            {
+               "@name": "Note-created",
+               "#text": "2021-01-04T22:50:44+0000,2020-12-12T06:51:50+0000,2020-11-13T01:03:59+0000,2020-11-12T17:35:01+0000,2020-11-11T04:19:16+0000,2020-11-10T20:58:05+0000,2020-10-21T20:18:14+0000,2020-10-15T14:24:16+0000,2020-10-15T14:03:23+0000,2020-10-14T16:02:19+0000,2020-10-14T12:50:03+0000,2020-10-13T20:44:54+0000,2020-10-13T20:44:54+0000"
+            },
+            {
+               "@name": "Note-title",
+               "#text": "KnowledgeSignature,DetectionLogic,static-analysis-r73x,xr_commit_status-r73x,static-analysis-main,xr_commit_status-xr-dev,Defer-to-741,Audit_summary,Unit-test,Bug_Leak_Analysis,Scrubnote,Release-note,BigDescription"
+            },
+            {
+               "@name": "Opened-on",
+               "#text": "11/12/2020 06:43:21"
+            },
+            {
+               "@name": "Opener",
+               "#text": "bhuie"
+            },
+            {
+               "@name": "Origin",
+               "#text": "design"
+            },
+            {
+               "@name": "Original-activity-when-found",
+               "#text": "Customer-Use"
+            },
+            {
+               "@name": "Original-found",
+               "#text": "customer-use"
+            },
+            {
+               "@name": "Original-found-during",
+               "#text": "Customer"
+            },
+            {
+               "@name": "Original-resolved-on",
+               "#text": "11/12/2020 06:43:21"
+            },
+            {
+               "@name": "Original-version",
+               "#text": "06.02.03.BASE"
+            },
+            {
+               "@name": "PSIRT",
+               "#text": "N"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "4.3.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "4.3.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "4.3.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "4.3.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "4.3.31"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "4.3.4"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "4.3.91"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.0.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.1.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.1.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.1.11"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.1.12"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.1.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.1.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.1.4"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.21"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.4"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.47"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.5"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.2.6"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.3.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.3.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.3.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.3.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.3.31"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "5.3.4"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.0.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.0.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.0.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.12"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.21"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.22"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.31"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.32"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.33"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.4"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.42"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.1.45"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.2.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.2.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.2.25"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.2.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.3.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.3.15"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.3.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.3.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.4.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.4.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.4.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.4.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.15"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.25"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.26"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.28"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.29"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.90"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.92"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.5.93"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.6.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.6.11"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.6.12"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.6.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.6.25"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.6.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.6.4"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.7.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.7.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.7.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "6.7.4"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.0.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.0.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.0.11"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.0.12"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.0.14"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.0.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.0.90"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.1.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.1.15"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.1.2"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.1.25"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.1.3"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.2.0"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.2.1"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.2.12"
+            },
+            {
+               "@name": "Potentially-affected-releases",
+               "#text": "7.2.2"
+            },
+            {
+               "@name": "Product",
+               "#text": "all"
+            },
+            {
+               "@name": "Project",
+               "#text": "CSC.ena"
+            },
+            {
+               "@name": "RNE-Type",
+               "#text": "NONE"
+            },
+            {
+               "@name": "RNE_Type",
+               "#text": "NONE"
+            },
+            {
+               "@name": "Regression",
+               "#text": "N"
+            },
+            {
+               "@name": "Release-Ops-Manager",
+               "#text": "sanantha"
+            },
+            {
+               "@name": "Released-code",
+               "#text": "Y"
+            },
+            {
+               "@name": "Resolved-on",
+               "#text": "11/12/2020 06:43:21"
+            },
+            {
+               "@name": "Resolver",
+               "#text": "bhuie"
+            },
+            {
+               "@name": "Reti-bug",
+               "#text": "Y"
+            },
+            {
+               "@name": "Root-cause-analysis",
+               "#text": "Resource Exhaustion"
+            },
+            {
+               "@name": "SR-type",
+               "#text": "BEMS,C3"
+            },
+            {
+               "@name": "Security-screening-timestamp",
+               "#text": "11/17/2020 15:45:59"
+            },
+            {
+               "@name": "Severity",
+               "#text": "3"
+            },
+            {
+               "@name": "Severity-desc",
+               "#text": "moderate"
+            },
+            {
+               "@name": "Shared-component",
+               "#text": "N"
+            },
+            {
+               "@name": "Software-ios",
+               "#text": "6.2.3"
+            },
+            {
+               "@name": "Software-query",
+               "#text": "6.2.3"
+            },
+            {
+               "@name": "Status",
+               "#text": "R"
+            },
+            {
+               "@name": "Status-desc",
+               "#text": "R-Resolved"
+            },
+            {
+               "@name": "Submitted-on",
+               "#text": "10/13/2020 13:44:54"
+            },
+            {
+               "@name": "Submitter",
+               "#text": "abhadasi"
+            },
+            {
+               "@name": "Submitter-manager",
+               "#text": "shakthm"
+            },
+            {
+               "@name": "Submitter-org-bug",
+               "#text": "CX-GC-AMER-SP-XR-US"
+            },
+            {
+               "@name": "Symptoms",
+               "#text": "This issue can lead to shared memory leak if and when new L2VPN_LDI's getting assigned to same next-hop leaving old LDI's in stale state.\n\n1. Check the shared memory usage using below command:\n  RP/0/RSP0/CPU0:ASR-9006-B#show shmwin summary location 0/2/CPU0 | in l2fib\n  Thu Nov 12 10:19:27.213 UTC\n  l2fib    14  1   8     8    253  25282   25282    11/10/2020 11:14:41  <=== 25meg shared memory allocated to l2fib\n  RP/0/RSP0/CPU0:ASR-9006-B#\n\n2. Use below command to check whether LDI values continue to change for the XID. If yes, check the above command for any memory increase.\n     RP/0/RSP0/CPU0:ASR-9006-B#show l2vpn forwarding bridge-domain hardware ingress detail location 0/2/CPU0 | in \"l2vpn ldi\"         \n     Thu Nov 12 10:09:57.935 UTC\n     XID: 0xa0000003, bridge: 0, MAC limit: 4000, l2vpn ldi index: 0x17ea, vc label: 1036, <== LDI index 0x17ea\n     XID: 0xa0000005, bridge: 0, MAC limit: 4000, l2vpn ldi index: 0x17ef, vc label: 1037,\n     XID: 0xa0000007, bridge: 0, MAC limit: 4000, l2vpn ldi index: 0x17eb, vc label: 1038,\n\n3. Using above command, check highest LDI value used. For example, \"l2vpn ldi index: 0x17ea\" means, LDI value in use is 6122. \n    Do the rough calculation of shared memory usage for l2fib.  Calculations can be done as follows.\n    minimum l2vpn shared memory usage = (max LDI value ) * 44K \n\n    if l2fib shared memory usage is much less than the above calculation, then you likely NOT hitting this issue.\n\n   Taking above commands as an example, minimum expected l2vpn shared memory usage is:\n    (0x17ef) * 44K = 269M\n    But \"show shmwin summary location 0/2/cpu0 | in l2fib\" shows only 25meg memory usage. So this issue is not applicable here.\n\n3. If shared memory gets exhausted (typically 2.8Gig in cXR), L2FIB cannot be programmed further. Hence a recovery is required.  Check below command to find out if the LC is running out of shared memory.\n    RP/0/RSP0/CPU0:ASR-9006-B#show shmem summary location 0/2/CPU0 \n    Thu Nov 12 10:16:23.312 UTC\n    Total Shared memory: 1669M <----- Total shared memory usage in the LC. Max limit is 2.8Gig.\n\n4. L2VPN_LDI and associated next-hop database is programmed in all the LC's regardless of whether the LC's have L2vpn config or not. Hence memory leak will be on all the LC's."
+            },
+            {
+               "@name": "Sys-Last-Updated",
+               "#text": "05/17/2021 08:51:18"
+            },
+            {
+               "@name": "TACSR-count",
+               "#text": "1"
+            },
+            {
+               "@name": "TPS_flag",
+               "#text": "N"
+            },
+            {
+               "@name": "TPS_issue",
+               "#text": "N"
+            },
+            {
+               "@name": "Test-EDP-activity",
+               "#text": "Customer-Use"
+            },
+            {
+               "@name": "Test-EDP-phase",
+               "#text": "Customer"
+            },
+            {
+               "@name": "Tickets-count",
+               "#text": "2"
+            },
+            {
+               "@name": "Tickets-count-direct",
+               "#text": "2"
+            },
+            {
+               "@name": "To-be-fixed",
+               "#text": "06.02.03.BASE"
+            },
+            {
+               "@name": "Trouble-tickets",
+               "#text": "BEMS01158253;690080583"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "BEMSBEMS01158253"
+            },
+            {
+               "@name": "Trouble-tickets-direct",
+               "#text": "C3690080583"
+            },
+            {
+               "@name": "Updated",
+               "#text": "05/17/2021 08:51:18"
+            },
+            {
+               "@name": "Urgency",
+               "#text": "8"
+            },
+            {
+               "@name": "Urgency-desc",
+               "#text": "CL4"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "7.3.0"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "7.3.1"
+            },
+            {
+               "@name": "VF-patched",
+               "#text": "7.3.15"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "4.3.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "4.3.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "4.3.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "4.3.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "4.3.31"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "4.3.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "4.3.91"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.0.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.0.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.0.90"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.1.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.1.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.1.11"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.1.12"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.1.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.1.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.1.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.21"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.47"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.5"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.2.6"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.3.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.3.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.3.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.3.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.3.31"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "5.3.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.0.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.0.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.0.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.12"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.21"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.22"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.31"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.32"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.33"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.42"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.1.45"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.2.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.2.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.2.25"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.2.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.3.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.3.15"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.3.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.3.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.4.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.4.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.4.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.4.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.15"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.25"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.26"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.28"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.29"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.90"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.92"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.5.93"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.6.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.6.11"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.6.12"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.6.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.6.25"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.6.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.6.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.7.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.7.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.7.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "6.7.4"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.0.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.0.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.0.11"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.0.12"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.0.14"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.0.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.0.90"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.1.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.1.15"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.1.2"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.1.25"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.1.3"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.2.0"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.2.1"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.2.12"
+            },
+            {
+               "@name": "VF-unpatched",
+               "#text": "7.2.2"
+            },
+            {
+               "@name": "Version",
+               "#text": "06.02.03.BASE"
+            },
+            {
+               "@name": "Version",
+               "#text": "06.02.03.MPLS"
+            },
+            {
+               "@name": "Workarounds",
+               "#text": "Workaround:\n   potentially reducing number of PW's within bridge-domain to unique next-hops.\n\nRecovery (below 2 recovery methods can be used).\n---------------\n   1. crash l2vpn_mgr process in the LC. this will clear the shared memory. Restarting the process won't help. use below command to crash this process in LC 0/2/cpu0.\n        process crash l2fib_mgr location 0/2/CPU0 \n   2. Reload the LC or the router."
+            },
+            {
+               "@name": "kbmp_flg",
+               "#text": "N"
+            }
+         ]
+      }
+   }
+}
